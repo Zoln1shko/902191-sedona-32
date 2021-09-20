@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Славкова](https://up.htmlacademy.ru/htmlcss/32/user/902191).
-* Наставник: `Неизвестно`.
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
