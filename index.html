@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -21,24 +22,26 @@
         <ul>
           <li>
             <a href="index.html">
-              <img class="logo-header" src="#" alt="Герб Седоны" >
+              <img class="logo-header" src="images/logo/sedona.png" width="138" height="70" alt="Герб Седоны" >
             </a>
           </li>
         </ul>
         <ul>
-          <li>
-            <a class="search" href="#">Поиск</a>
-            <!--Временно прописала "Поиск", пока нет иконки-->
+          <li class="navigation-item">
+            <a class="search" href="#"></a>
+            <span class="visually-hidden">Поиск</span>
+            <img src="images/nav/search.svg" width="18" height="18" alt="">
           </li>
         </ul>
         <ul>
-          <li>
+          <li class="navigation-item">
             <button type="button" class="visually-hidden">Избранное</button>
+            <img src="images/nav/favorites.svg" width="31" height="27" alt="">
 
           </li>
         </ul>
         <ul>
-          <li>
+          <li class="navigation-item">
             <button type="button" class="visually-hidden">Хочу сюда!</button>
 
           </li>
@@ -49,7 +52,7 @@
 
 
     <main class="main-index">
-      <img class="logo-main" src="#" alt="Добро пожаловать в прекрасную Седону. «Потому что Гранд Каньон отстой!»">
+      <img class="logo-main" src="images/logo/welcome.png" width="458" height="352" alt="Добро пожаловать в прекрасную Седону. «Потому что Гранд Каньон отстой!»">
       <h1 class="visually-hidden">Седона</h1>
         <section>
           <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -58,27 +61,27 @@
             <li class="advantages-item">
               <h3 class="advantages-white-numbered">Настоящий городок</h3>
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img src="#" class="photo-right" alt="Здание в Седоне">
+              <img src="images/building.jpg" class="photo-right" width="800" height="384" alt="Здание в Седоне">
               <ul>
                 <li class="advantages-item">
-                  <img src="#" class="icon">
+                  <img src="images/home.svg" width="75" height="72" class="icon">
                   <h3 class="advantages-black">Жильё</h3>
                   <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="advantages-item">
-                  <img src="#" class="icon">
+                  <img src="images/food.svg" width="74" height="70" class="icon">
                   <h3 class="advantages-black">Еда</h3>
                   <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="advantages-item">
-                  <img src="#" class="icon">
+                  <img src="images/gift.svg" width="64" height="76" class="icon">
                   <h3 class="advantages-black">Сувениры</h3>
                   <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
                 </li>
               </ul>
             </li>
             <li class="advantages-item">
-              <img src="#" class="photo-left" alt="Мост Дьявола">
+              <img src="images/canyon.jpg" class="photo-left" width="800" height="384" alt="Мост Дьявола">
               <h3 class="advantages-white-numbered">Там есть мост дьявола</h3>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 
@@ -102,7 +105,7 @@
         <section class="modal">
           <h2 class="title">Заинтересовались?</h2>
           <p class="search-hotel">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button type="button">Поиск гостиницы в Седоне</button>
+          <button class="button" type="button">Поиск гостиницы в Седоне</button>
         </section>
 
         <section class="subscribes">
@@ -112,7 +115,7 @@
             </h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <input type="email" id="subscribe" name="email" placeholder="Ваш e-mail" autocomplete="email">
-            <button>Подписаться</button>
+            <button class="button-blue">Подписаться</button>
           </form>
         </section>
 
@@ -123,20 +126,23 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul>
           <li>
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <a class="button-social" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
+              <img src="images/social/twitter.svg" width="18" height="15" alt="">
             </a>
           </li>
 
           <li>
-            <a class="button" href="https://www.facebook.com/htmlacademy">
+            <a class="button-social" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
+              <img src="images/social/facebook.svg" width="10" height="18" alt="">
             </a>
           </li>
 
           <li>
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <a class="button-social" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">Ютюб</span>
+              <img src="images/social/youtube.svg" width="20" height="16" alt="">
             </a>
           </li>
         </ul>
@@ -148,8 +154,8 @@
       </section>
 
       <section class="footer-logo">
-        <a href="#">
-          <img class="logo-htmlacademy" src="https://htmlacademy.ru/" alt="Логотип HTML Academy" >
+        <a href="https://htmlacademy.ru/">
+          <img class="logo-htmlacademy" src="images/logo/logo_html.svg" width="115" height="34" alt="Логотип HTML Academy" >
         </a>
       </section>
 

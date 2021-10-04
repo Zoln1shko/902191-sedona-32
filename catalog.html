@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск гостиницы в Седоне</title>
-
+    <link rel="stylesheet" href="styles/styles.css">
 
   </head>
 <body>
@@ -11,35 +11,40 @@
     <nav class="main-navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
+          <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul>
         <li>
           <a href="index.html">
-            <img class="logo-header" src="" alt="Герб Седоны" >
+            <img class="logo-header" src="images/logo/sedona.png" alt="Герб Седоны" >
           </a>
         </li>
       </ul>
       <ul>
-        <li>
-          <a class="search" href="#">Поиск</a>
+        <li class="navigation-item">
+          <a class="search" href="#"></a>
+          <span class="visually-hidden">Поиск</span>
+          <img src="images/nav/search.svg" alt="">
         </li>
       </ul>
       <ul>
-        <li>
+        <li class="navigation-item">
           <button type="button" class="visually-hidden">Избранное</button>
+          <img src="images/nav/favorites.svg" alt="">
+
         </li>
       </ul>
       <ul>
-        <li>
+        <li class="navigation-item">
           <button type="button" class="visually-hidden">Хочу сюда!</button>
+
         </li>
       </ul>
 
@@ -57,7 +62,7 @@
           <a class="breadcrumbs-link">Гостиницы Седоны</a>
         </li>
       </ol>
-    </header>
+
 
     <section>
       <h2 class="visually-hidden">Список фильтров</h2>
@@ -137,9 +142,10 @@
         </fieldset>
 
 
-        <button class="button" type="submit">Показать</button>
+        <button class="button-blue" type="submit">Применить</button>
         <button class="button" type="reset">Сбросить</button>
       </form>
+    </header>
 
       <form class="sorting-type">
         <p class="found">Найдено гостиниц: 38</p>
@@ -151,7 +157,7 @@
         </select>
         <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
       </form>
-      <a href="#" class="button">
+      <a href="#" class="button-list">
         <span class="visually-hidden">Показать список</span>
       </a>
       <a href="#" class="button-gallery">
@@ -164,12 +170,12 @@
       <ul>
       <li class="option-description">
         <a class="option-description-img-link" href="#">
-          <img class="option-description-image" src="" alt="">
+          <img class="option-description-image" src="images/hotel/hotel1.jpg" alt="">
         </a>
         <a class="option-description-link">
           <h3 class="option-description-title">Amara Resort & Spa</h3>
         </a>
-        <img class="option-description-stars" src="" alt="4 звезды">
+        <img class="option-description-stars" src="images/star/star4.svg" alt="4 звезды">
         <p class="option-description-rating">Рейтинг: 8,5</p>
         <p class="option-description-designation">Гостиница</p>
         <b class="option-description-price">От 4000 ₽</b>
@@ -179,12 +185,12 @@
 
       <li class="option-description">
         <a class="option-description-img-link" href="#">
-          <img class="option-description-image" src="" alt="">
+          <img class="option-description-image" src="images/hotel/hotel2.jpg" alt="">
         </a>
         <a class="option-description-link">
           <h3 class="option-description-title">Desert Quail Inn</h3>
         </a>
-        <img class="option-description-stars" src="" alt="3 звезды">
+        <img class="option-description-stars" src="images/star/star3.svg" alt="3 звезды">
         <p class="option-description-rating">Рейтинг: 8,9</p>
         <p class="option-description-designation">Мотель</p>
         <b class="option-description-price">От 3000 ₽</b>
@@ -194,12 +200,12 @@
 
       <li class="option-description">
         <a class="option-description-img-link" href="#">
-          <img class="option-description-image" src="" alt="">
+          <img class="option-description-image" src="images/hotel/hotel3.jpg" alt="">
         </a>
         <a class="option-description-link">
           <h3 class="option-description-title">Villas at Poco Diablo</h3>
         </a>
-        <img class="option-description-stars" src="" alt="2 звезды">
+        <img class="option-description-stars" src="images/star/star2.svg" alt="2 звезды">
         <p class="option-description-rating">Рейтинг: 9,2</p>
         <p class="option-description-designation">Апартаменты</p>
         <b class="option-description-price">От 2000 ₽</b>
@@ -209,12 +215,12 @@
 
       <li class="option-description-img-link">
         <a class="option-description-link" href="#">
-          <img class="option-description-image" src="" alt="">
+          <img class="option-description-image" src="images/hotel/hotel4.jpg" alt="">
         </a>
         <a class="option-description-link">
           <h3 class="option-description-title">GreenTree Inn</h3>
         </a>
-        <img class="option-description-stars" src="" alt="2 звезды">
+        <img class="option-description-stars" src="images/star/star2.svg" alt="2 звезды">
         <p class="option-description-rating">Рейтинг: 9,2</p>
         <p class="option-description-designation">Гостиница</p>
         <b class="option-description-price">От 3000 ₽</b>
@@ -222,7 +228,7 @@
         <a href="#" class="option-description-button button-favorites">В избранное</a>
       </li>
     </ul>
-    <button class="button pagination-load-more" type="button">Загрузить ещё</button>
+    <button class="button pagination-load-more" type="button-blue">Загрузить ещё</button>
     <ul class="pagination">
       <li class="pagination-item">
         <a class="pagination-link pagination-current">1</a>
@@ -270,20 +276,23 @@
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul>
         <li>
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
+          <a class="button-social" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
+            <img src="images/social/twitter.svg" alt="">
           </a>
         </li>
 
         <li>
-          <a class="button" href="https://www.facebook.com/htmlacademy">
+          <a class="button-social" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Фейсбук</span>
+            <img src="images/social/facebook.svg" alt="">
           </a>
         </li>
 
         <li>
-          <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <a class="button-social" href="https://www.youtube.com/c/HTMLAcademyRUS">
             <span class="visually-hidden">Ютюб</span>
+            <img src="images/social/youtube.svg" alt="">
           </a>
         </li>
       </ul>
@@ -295,8 +304,8 @@
     </section>
 
     <section class="footer-logo">
-      <a href="#">
-        <img class="logo-htmlacademy" src="https://htmlacademy.ru/" alt="Логотип HTML Academy" >
+      <a href="https://htmlacademy.ru/">
+        <img class="logo-htmlacademy" src="images/logo/logo_html.svg" alt="Логотип HTML Academy" >
       </a>
     </section>
 
