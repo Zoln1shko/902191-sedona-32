@@ -13,7 +13,7 @@
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-/*
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -21,26 +21,34 @@ body {
   color: #000000;
   background-color: #FFFFFF;
 }
-*/
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .logo-main {
-  background-image: url("images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-position: center;
-  background-size: 1200px 485px;
+  background-size: 100% 485px;
   background-repeat: no-repeat;
 }
 
+
 .subscribes {
-  background-image: url("images/background_blur.jpg");
+  background-image: url("../images/background_blur.jpg");
   background-position: center;
-  background-size: 1200px 411px;
+  background-size: 100% 411px;
   background-repeat: no-repeat;
 }
 
 .inner-header {
-  background-image: url("images/catalog_background.jpg");
+  background-image: url("../images/catalog_background.jpg");
   background-position: center;
-  background-size: 1200px 408px;
+  background-size: 100% 408px;
   background-repeat: no-repeat;
 }
 
@@ -70,6 +78,7 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
 }
+
 
 .page-header {
   color: #000000;
