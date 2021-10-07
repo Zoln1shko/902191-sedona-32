@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -160,7 +160,11 @@ body {
   border-radius: 4px;
 }
 
-input {
+.input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
   border-radius: 4px 0 0 4px;
 }
 
@@ -191,6 +195,16 @@ li {
   text-align: center;
   color: #000000;
 }
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-food{
+  background-color: #FFFFFF;
+}
+
+.advantages-item-road{
+  background-color: rgba(131, 179, 211, 0.2);
+}
 
 .decoration {
   background-color: #83B3D3;
@@ -215,7 +229,6 @@ li {
 
 .advantages-black,
 .advantages-description {
-  background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
@@ -231,13 +244,6 @@ li {
   text-transform: none;
 }
 
-.food {
-  background-color: #FFFFFF;
-}
-
-.road {
-  background-color: rgba(131, 179, 211, 0.2);
-}
 
 .advantages-description-white {
   color: #FFFFFF;
