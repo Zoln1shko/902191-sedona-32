@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -30,13 +38,90 @@ body {
   margin: -1px;
 }
 
+.main-container {
+flex-grow: 1;
+}
+
+.main-navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 350px;
+}
+
+.main-logo {
+  width: 500px;
+  margin-left: auto;
+}
+
+.user-navigation {
+  width: 350px;
+  margin-left: auto;
+}
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .logo-main {
   background-image: url("../images/background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
 }
 
+.catalog-column {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.found {
+  width: 340px;
+  margin-right: 195px;
+}
+
+.sorting-type {
+  width: 290;
+  margin-right: 85px;
+}
+
+.view {
+  width: 160px;
+  margin-right: 75px;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer-social{
+  width: 240px;
+}
+
+.footer-contacts{
+  width: 720px;
+  margin-left: auto;
+}
+
+.footer-logo {
+  width: 240px;
+  margin-left: auto;
+}
 
 .subscribes {
   background-image: url("../images/background_blur.jpg");
@@ -69,6 +154,26 @@ body {
   font-weight: 400;
   text-align: left;
   color: #FFFFFF;
+}
+
+.catalog-products {
+  display: flex;
+  flex-direction: row;
+}
+
+.infrastructure {
+  width: 150;
+  margin-right: 70px;
+}
+
+.type {
+  width: 150;
+  margin-right: 216px;
+}
+
+.price {
+  width: 530;
+  margin-right: 75px;
 }
 
 .list-filter-title {
@@ -197,7 +302,14 @@ li {
 }
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
+
+.photo-left,
+.photo-right {
+  width: 800px;
+}
+
 .advantages-item-food{
   background-color: #FFFFFF;
 }
@@ -284,6 +396,16 @@ li {
   line-height: 36px;
   text-align: center;
   text-transform: none;
+}
+
+.found {
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .search-hotel {
